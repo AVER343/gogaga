@@ -16,7 +16,7 @@ hbs.registerPartials(partialsPath)
 const viewsPath=path.join(__dirname,`../templates/views`)
 app.set('view engine','hbs')
 app.set('views',viewsPath)
-app.get('/gogaga/post',(req,res)=>{
+app.get('/gogaga/add',(req,res)=>{
     res.render('add',{title:"Post details"})
 })
 app.get('/gogaga/list',async (req,res)=>{
