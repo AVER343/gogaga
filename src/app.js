@@ -23,7 +23,7 @@ app.get('/gogaga/list',async (req,res)=>{
    const users= await User.find({})
    await res.status(200).render('list',{body:JSON.stringify(users),title:'List'})
 })
-app.post('/gogaga/post',async (req,res)=>{
+app.post('/gogaga/add',async (req,res)=>{
     const user = new User(req.body)
     try{
         await user.save()

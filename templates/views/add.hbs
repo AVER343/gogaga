@@ -33,7 +33,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="/gogaga/post">Post Page</a></li>
+                <li><a href="/gogaga/add">Post Page</a></li>
                 <li><a href="/gogaga/list">List Page</a></li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@ document.getElementById('button').addEventListener('click',(event)=>{
         event.preventDefault()
         const name =document.getElementById('name').value
         let age =document.getElementById('age').value
-        postData('/gogaga/post', { name,age })
+        postData('/gogaga/add', { name,age })
             .then((response)=>{
                 if(response.error==null)
                     {
