@@ -38,6 +38,10 @@ app.post('/gogaga/post',async (req,res)=>{
     }
     
 })
+app.get('*',(req,res)=>{
+    res.send(`PAGE NOT FOUND !
+                <a href="/gogaga/post">POST PAGE</a> `)
+})
 app.listen(PORT,()=>{
     console.log("Server Running")
 })
