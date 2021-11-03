@@ -16,6 +16,6 @@
     "mongoose": "^5.9.2",
     "nodemon": "^2.0.2",
     "route": "^0.2.5",
-    "validator": "^12.2.0"
+    "validator": "^13.7.0"
   }
 }
